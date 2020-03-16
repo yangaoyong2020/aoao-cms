@@ -41,6 +41,7 @@ public class AdminController {
 	/**
 	 * 进入文章审核列表
 	 */
+	//鱼卡
 	@RequestMapping("articles")
 	public String articles(Model m,Article article,@RequestParam(defaultValue="1")Integer page,@RequestParam(defaultValue="5")Integer pagesize){
 		PageInfo<Article> info = articleService.selects(article, page, pagesize);
