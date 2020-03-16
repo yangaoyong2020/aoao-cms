@@ -33,6 +33,7 @@ public class AdminController {
  * @return
  * @return: String
  */
+	//加注释
 	@RequestMapping(value={"","/","index"})
 	public String Admin(){
 		return "admin/index";
