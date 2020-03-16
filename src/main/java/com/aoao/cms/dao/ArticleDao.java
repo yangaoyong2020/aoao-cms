@@ -3,7 +3,7 @@ package com.aoao.cms.dao;
 import java.util.List;
 
 import com.aoao.cms.domain.Article;
-
+//王刘帅必生班
 public interface ArticleDao {
      //增加文章
 	int insert(Article article);
