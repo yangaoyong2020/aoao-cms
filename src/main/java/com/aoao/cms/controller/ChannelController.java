@@ -21,6 +21,7 @@ import com.aoao.cms.service.ChannelService;
 @RequestMapping("channel")
 public class ChannelController {
 
+	//你好啊
 	@Autowired
 	private ChannelService channelservice;
 	//查询所有的栏目
