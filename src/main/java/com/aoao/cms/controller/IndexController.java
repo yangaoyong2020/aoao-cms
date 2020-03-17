@@ -156,6 +156,7 @@ public class IndexController {
 				@RequestMapping("deletecollect")
 				public boolean deletecollect(Integer id){
 					return collectService.delete(id)>0;
-				}
+	}
+	
 	
 }

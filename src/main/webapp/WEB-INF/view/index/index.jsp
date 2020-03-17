@@ -60,6 +60,7 @@
 
 		<div class="row">
 			<!-- 左侧栏目 -->
+		
 			<div class="col-md-2" style="padding-top: 10px">
 				<ul>
 					<!-- 今日头条的logo -->
@@ -164,7 +165,29 @@
 
 			</div>
 			<div class="col-md-3">
-				<div class="card" style="width: 18rem; margin-top: 6px">
+			     <div class="card" style="width: 18rem; margin-top: 6px">
+					<div class="card-header">本月评选</div>
+					<div class="card-body">
+						<!-- 最新文章 --10篇 -->
+						<c:forEach items="${lastArticles.list}" var="lastArticle">
+							<div class="media">
+								<img src="/pic/${lastArticle.picture}" class="mr-3 rounded"
+									alt="..." style="width: 60px; height: 60px">
+								<div class="media-body">
+									<p><a href="/articleDetail?id=${lastArticle.id }" target="_blank">${lastArticle.title }</a></p>
+								</div>
+							</div>
+							<hr>
+						</c:forEach>
+					</div>
+				</div>
+			
+			
+			
+			
+			
+			
+				<%-- <div class="card" style="width: 18rem; margin-top: 6px">
 					<div class="card-header">最新文章</div>
 					<div class="card-body">
 						<!-- 最新文章 --10篇 -->
@@ -180,7 +203,7 @@
 						</c:forEach>
 					</div>
 				</div>
-			</div>
+			</div> --%>
 
 		</div>
 
@@ -209,6 +232,11 @@
 
 	</div>
 	<script type="text/javascript">
+	//页面加载时执行 
+	$(function(){
+		location.herf="";
+	})
+	
 	
 	  //注册
 	  function reg(){
